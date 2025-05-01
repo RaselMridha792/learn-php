@@ -29,14 +29,30 @@ function calculator($a, $b, $operation){
       }else{
             echo("wrong operation can't perform");
       }
-
-      // switch($operation){
-      //       catch $operation == '+':
-      //             echo("")
-      // }
 }
 
 calculator(10, 20, '+');
+
+function calculator_SC($a, $b, $operator){
+      switch($operator){
+            case '+':
+                  echo("your answer is: " . ($a + $b));
+                  break;
+            case '-':
+                  echo("your answer is: " . ($a - $b));
+                  break;
+            case '/':
+                  echo("your answer is: " . ($a / $b));
+                  break;
+            case '*':
+                  echo("your answer is: " . ($a * $b));
+                  break;
+            default:
+            echo("wrong operation can't perform");
+      }
+}
+
+calculator_SC(10, 20, '+');
 
 
 ?>
