@@ -22,4 +22,15 @@ function compare($a, $b, $c){
 // compare(23434, 2342341, 543342);
 
 
+// add i love for every fruits items of an array
+
+$fruits = array("apple", "banana", "mango", "orange");
+
+function add_love($love){
+      foreach($love as $fruit){
+            echo("<b>I love:</b> " . $fruit . "</br>");
+      }
+}
+
+add_love($fruits);
 ?>
